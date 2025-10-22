@@ -1,0 +1,21 @@
+*{
+    background-color: azure;
+    justify-self: auto;
+}
+
+form{
+    width: 90%;
+    height: 80%;
+    justify-self: auto;
+    border: 2px solid rgb(96 139 168);
+    padding: 1rem;
+}
+
+#submit-btn{
+    background-color: rgb(167, 103, 103);
+    margin: 1rem;
+    border-radius: 10px;
+    width: 10rem;
+    height: 2rem;
+}
+
