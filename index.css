@@ -124,3 +124,7 @@ input{
     margin-bottom: 5px;
     
 }
+
+.login-inactive{
+    display: none;
+}

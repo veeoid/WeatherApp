@@ -41,6 +41,8 @@ const weather = submitBtn.addEventListener('click', async (event)=>{
 });
 
 
+if (!localStorage.getItem('isLoggedIn')){
+
 loginBtn.addEventListener('click', () => {
   $('#login-modal').modal('show');
 });
@@ -64,3 +66,12 @@ loginForm.addEventListener('submit', (event) => {
 
   $('#login-modal').modal('hide');
 });
+}else{
+    loginBtn.style.display = "none"
+    const loggedUser = localStorage.getItem('username')
+    const navElements = document.getElementsByClassName('navbar')
+    const navEle = navElements[0];
+    const div = document.createElement('div')
+    div.textContent = loggedUser
+    navEle.appendChild(div)
+}
